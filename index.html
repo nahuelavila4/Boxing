@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boxeo</title>
-    <link rel="stylesheet" href="prep_flexbox1.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,12 +17,8 @@
       <header class="container-fluid bg-primary d-flex justify-content-center">
         <h1>Boxing Star</h1>
       </header>
-
       <nav class="navbar navbar-expand-lg bg-light p-3" id="menu">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <span class="text-primary fs-5 fw-bold">Boxing Star</span>
-          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -82,93 +78,144 @@
       <!-- Rutina que hacen los boxeadires profesionales -->
 
       <!-- INTRO Poner horizontal, solo nombre y foto de los tres-->
-      <section class="container-fluid text-center">
-        <div class="row">
+      <div class="container">
+        <section class="row">
           <div class="col">
-            <h3>Ali</h3>
-            <img src="./img/ali.jpg" alt="" width="300" height="300" />
+            <div class="row">
+              <h3>Ali</h3>
+              <img src="./img/ali.jpg" alt="" width="300" height="300" />
+            </div>
+            <div class="row">
+              <a href="">Biografia</a>
+            </div>
           </div>
           <div class="col">
-            <h3>Tyson</h3>
-            <img src="./img/tyson.jpg" alt="" width="300" height="300" />
+            <div class="row">
+              <h3>Tyson</h3>
+              <img src="./img/tyson.jpg" alt="" width="300" height="300" />
+            </div>
+            <div class="row">
+              <a href="">Biografia</a>
+            </div>
           </div>
           <div class="col">
-            <h3>Canelo</h3>
-            <img src="./img/canelo_solo.jpeg" alt="" width="300" height="300" />
+            <div class="row">
+              <h3>Canelo</h3>
+              <img
+                src="./img/canelo_solo.jpeg"
+                alt=""
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="row">
+              <a href="">Biografia</a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="container-fluid text-center pt-4" id="intro">
-        <h2>Todo lo que debes saber sobre el mundo del boxeo</h2>
-        <p>
-          Boxing Star se encarga de recopilar la mayor fuente de informacion de
-          luchadores, peleas, campeonatos, etc.
-        </p>
-        <h3>News</h3>
-        <div class="row">
+        <section class="row text-center align-items-center" id="intro">
           <div class="col">
+            <h2>Todo lo que debes saber sobre el mundo del boxeo</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Similique ducimus impedit consequuntur veritatis sit amet quae,
-              itaque enim est a laboriosam doloremque possimus dolorum? Dolorum
-              pariatur odio a asperiores praesentium.
+              Boxing Star recopila informacion detallada sobre luchadores,
+              peleas, campeonatos, etc.
             </p>
           </div>
+        </section>
+        <section class="row bg-danger" id="ali">
+          <div class="row">
+            <div class="col">
+              <h2>Muhammad Ali</h2>
+              <h3>Origenes</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Labore, velit, mollitia enim in ab quaerat eveniet quas aliquam
+                magni sint illo quibusdam adipisci autem excepturi. Odio
+                delectus doloremque nostrum natus? Quibusdam obcaecati dolor
+                accusantium quaerat illum veritatis dolorum quas! Ipsam
+                inventore blanditiis necessitatibus sunt esse pariatur facere
+                architecto sit dolores ipsum, delectus numquam? Asperiores
+                fugiat magnam, reiciendis aperiam et exercitationem.
+              </p>
+            </div>
+            <div class="col">
+              <img src="./img/ali_perfil.jpg" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Carrera deportiva</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                eveniet. Qui, esse saepe. Sequi, cumque aspernatur.
+                Necessitatibus dolores, quos at repellendus qui aperiam adipisci
+                odit labore quidem libero dicta consequuntur?
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Combates</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                eveniet. Qui, esse saepe. Sequi, cumque aspernatur.
+                Necessitatibus dolores, quos at repellendus qui aperiam adipisci
+                odit labore quidem libero dicta consequuntur?
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Reconocimientos</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                eveniet. Qui, esse saepe. Sequi, cumque aspernatur.
+                Necessitatibus dolores, quos at repellendus qui aperiam adipisci
+                odit labore quidem libero dicta consequuntur?
+              </p>
+            </div>
+          </div>
+        </section>
+        <div
+          class="row bg-secondary text-center align-items-center justify-content-center"
+          id="rutinas"
+        >
           <div class="col">
+            <h3>Rutinas</h3>
+            <div class="row">
+              <div class="col">
+                <p>Rutinas recomendadas por boxeadores</p>
+                <button type="button" class="btn btn-primary">Primary</button>
+              </div>
+              <div class="col">
+                <p>Rutinas recomendadas por entrenadores</p>
+                <button type="button" class="btn btn-primary">Primary</button>
+              </div>
+              <div class="col">
+                <p>Rutinas recomendadas por gimnastas</p>
+                <button type="button" class="btn btn-primary">Primary</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center text-center" id="peleas">
+          <div class="col">
+            <h2>Peleas historicas</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-              soluta laudantium consectetur autem commodi! Obcaecati temporibus
-              neque minima velit pariatur possimus earum magnam quisquam, animi
-              nostrum, assumenda, suscipit voluptas sunt!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              voluptate ea quas debitis rerum amet obcaecati? Reiciendis
+              repellendus doloribus, ipsam, sit delectus, consectetur at
+              voluptatum fugit aliquid molestias non excepturi. Modi, libero
+              cupiditate soluta voluptas ipsam expedita rem corporis aspernatur
+              sequi dolore quibusdam quod beatae sapiente animi fugit provident
+              facilis necessitatibus debitis velit non. Ipsum ad dolor
+              temporibus eum eius.
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              sunt excepturi, laudantium iste doloremque, maxime neque
-              exercitationem alias, tempore inventore iure voluptate nisi!
-              Reprehenderit culpa doloribus vero, assumenda nihil architecto.
-            </p>
-          </div>
-        </div>
-      </section>
+      </div>
 
-      <section>
-        <article class="art" id="art1">
-          <h2>Muhammad Ali</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            culpa vero numquam, recusandae earum voluptates sapiente. Asperiores
-            eius libero suscipit ex itaque, cumque voluptatem, aut omnis
-            laboriosam, sequi quas reiciendis.
-          </p>
-        </article>
-      </section>
-      <section class="container-fluid text-center">
-        <div class="row">
-          <h3>Rutinas</h3>
-          <div class="col">
-            <p>Rutinas recomendadas por boxeadores</p>
-            <button type="button" class="btn btn-primary">Primary</button>
-          </div>
-          <div class="col">
-            <p>Rutinas recomendadas por entrenadores</p>
-            <button type="button" class="btn btn-primary">Primary</button>
-          </div>
-          <div class="col">
-            <p>Rutinas recomendadas por gimnastas</p>
-            <button type="button" class="btn btn-primary">Primary</button>
-          </div>
-        </div>
-      </section>
-      <section class="container-fluid text-center">
-        <div class="row">
-          <h2>Peleas historicas</h2>
-        </div>
-      </section>
       <footer>
         <p>Footer</p>
       </footer>

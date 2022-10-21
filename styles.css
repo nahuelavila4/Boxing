@@ -11,3 +11,9 @@ color:darkslategray;
 	max-height: 35rem;
 }
 
+#intro, #rutinas, #peleas{
+	height: 30rem;
+}
+#ali img{
+	width: 20rem;
+}
