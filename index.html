@@ -11,321 +11,323 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <header class="container-fluid bg-primary d-flex justify-content-center">
+    <div class="header top-header py-4">
+      <div class="container text-center">
         <h1>Boxing Star</h1>
-      </header>
-      <nav class="navbar navbar-expand-lg bg-light p-3" id="menu">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="prep_flexbox1.html"
-                  >Home</a
-                >
-              </li>
+      </div>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg bg-light p-3" id="menu">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="prep_flexbox1.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Content
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Schedule</a></li>
+                <li><a class="dropdown-item" href="#">Workout</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stars</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Stars</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Schedule</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Rutina que hacen los boxeadires profesionales -->
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Workout</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+    <!-- INTRO Poner horizontal, solo nombre y foto de los tres-->
+    <div class="container">
+      <section class="row mt-5 text-center">
+        <div class="col-4">
+          <div class="row">
+            <img src="./img/ali.jpg" alt="" width="300" height="300" />
+          </div>
+          <div class="row">
+            <a href="">Biografia</a>
           </div>
         </div>
-      </nav>
-      <!-- Rutina que hacen los boxeadires profesionales -->
+        <div class="col-4">
+          <div class="row">
+            <img src="./img/tyson.jpg" alt="" width="300" height="300" />
+          </div>
+          <div class="row">
+            <a href="">Biografia</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <img src="./img/canelo_solo.jpeg" alt="" width="300" height="300" />
+          </div>
+          <div class="row">
+            <a href="">Biografia</a>
+          </div>
+        </div>
+      </section>
 
-      <!-- INTRO Poner horizontal, solo nombre y foto de los tres-->
-      <div class="container">
-        <section class="row">
-          <div class="col">
-            <div class="row">
-              <h3>Ali</h3>
-              <img src="./img/ali.jpg" alt="" width="300" height="300" />
-            </div>
-            <div class="row">
-              <a href="">Biografia</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="row">
-              <h3>Tyson</h3>
-              <img src="./img/tyson.jpg" alt="" width="300" height="300" />
-            </div>
-            <div class="row">
-              <a href="">Biografia</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="row">
-              <h3>Canelo</h3>
-              <img
-                src="./img/canelo_solo.jpeg"
-                alt=""
-                width="300"
-                height="300"
-              />
-            </div>
-            <div class="row">
-              <a href="">Biografia</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="row text-center align-items-center" id="intro">
-          <div class="col">
-            <h2>Todo lo que debes saber sobre el mundo del boxeo</h2>
+      <section class="row text-center align-items-center" id="intro">
+        <div class="col">
+          <h2>Todo lo que debes saber sobre el mundo del boxeo</h2>
+          <p>
+            Boxing Star recopila informacion detallada sobre luchadores, peleas,
+            campeonatos, etc.
+          </p>
+        </div>
+      </section>
+      <section class="row bg-danger" id="ali">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <h2>Muhammad Ali</h2>
+            <h3>Origenes</h3>
             <p>
-              Boxing Star recopila informacion detallada sobre luchadores,
-              peleas, campeonatos, etc.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore,
+              velit, mollitia enim in ab quaerat eveniet quas aliquam magni sint
+              illo quibusdam adipisci autem excepturi. Odio delectus doloremque
+              nostrum natus? Quibusdam obcaecati dolor accusantium quaerat illum
+              veritatis dolorum quas! Ipsam inventore blanditiis necessitatibus
+              sunt esse pariatur facere architecto sit dolores ipsum, delectus
+              numquam? Asperiores fugiat magnam, reiciendis aperiam et
+              exercitationem.
             </p>
           </div>
-        </section>
-        <section class="row bg-danger" id="ali">
-          <div class="row justify-content-center">
-            <div class="col-lg-4">
-              <h2>Muhammad Ali</h2>
-              <h3>Origenes</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Labore, velit, mollitia enim in ab quaerat eveniet quas aliquam
-                magni sint illo quibusdam adipisci autem excepturi. Odio
-                delectus doloremque nostrum natus? Quibusdam obcaecati dolor
-                accusantium quaerat illum veritatis dolorum quas! Ipsam
-                inventore blanditiis necessitatibus sunt esse pariatur facere
-                architecto sit dolores ipsum, delectus numquam? Asperiores
-                fugiat magnam, reiciendis aperiam et exercitationem.
-              </p>
-            </div>
-            <div class="col-lg-4">
-              <img src="./img/ali_perfil.jpg" alt="" />
-            </div>
+          <div class="col-lg-4">
+            <img src="./img/ali_perfil.jpg" alt="" />
           </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Carrera profesional
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
                   >
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
-                      It is shown by default, until the collapse plugin adds the
-                      appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Combates
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Reconocimientos
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
-                    </div>
+                    Carrera profesional
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong>
+                    It is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <div
-          class="row bg-secondary text-center align-items-center justify-content-center"
-          id="rutinas"
-        >
-          <div class="col">
-            <h3>Rutinas</h3>
-            <div class="row">
-              <div class="col">
-                <p>Rutinas recomendadas por boxeadores</p>
-                <button type="button" class="btn btn-primary">Primary</button>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Combates
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <p>Rutinas recomendadas por entrenadores</p>
-                <button type="button" class="btn btn-primary">Primary</button>
-              </div>
-              <div class="col">
-                <p>Rutinas recomendadas por gimnastas</p>
-                <button type="button" class="btn btn-primary">Primary</button>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Reconocimientos
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row align-items-center text-center" id="peleas">
-          <div class="col">
-            <h2>Peleas historicas</h2>
-            <img src="./img/box1.jpg" alt="" />
-            <div class="row">
-              <a href="">Ver mas</a>
+      </section>
+      <div
+        class="row bg-secondary text-center align-items-center justify-content-center"
+        id="rutinas"
+      >
+        <div class="col">
+          <h3>Rutinas</h3>
+          <div class="row">
+            <div class="col">
+              <p>Rutinas recomendadas por boxeadores</p>
+              <button type="button" class="btn btn-primary">Primary</button>
             </div>
-          </div>
-          <div class="col">
-            <h3>Rivalidades</h3>
-            <img src="./img/ali_bonavena.jpg" alt="" />
-            <div class="row">
-              <a href="">Ver mas</a>
+            <div class="col">
+              <p>Rutinas recomendadas por entrenadores</p>
+              <button type="button" class="btn btn-primary">Primary</button>
             </div>
-          </div>
-          <div class="col">
-            <h3>Records</h3>
-            <img src="./img/box2.jpg" alt="" />
-            <div class="row">
-              <a href="">Ver mas</a>
+            <div class="col">
+              <p>Rutinas recomendadas por gimnastas</p>
+              <button type="button" class="btn btn-primary">Primary</button>
             </div>
           </div>
         </div>
-        <div class="row" id="contact">
-          <div class="col">
-            <h3>Contact Us</h3>
-            <div class="row">
-              <form action="">
-                <div class="col">
-                  <div class="form-floating mb-3">
-                    <input
-                      class="form-control"
-                      id="floatingname"
-                      placeholder="Nombre"
-                    />
-                    <label for="floatingname">Nombre</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="floatingInput"
-                      placeholder="name@example.com"
-                    />
-                    <label for="floatingInput">Email</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <textarea
-                      id="floatingtxt"
-                      class="form-control"
-                      placeholder="asc"
-                    ></textarea>
-                    <label for="floatingtxt">Mensaje</label>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="row align-items-center text-center" id="peleas">
+        <div class="col">
+          <h2>Peleas historicas</h2>
+          <img src="./img/box1.jpg" alt="" width="200" height="200" />
+          <div class="row">
+            <a href="">Ver mas</a>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Rivalidades</h3>
+          <img src="./img/ali_bonavena.jpg" alt="" width="200" height="200" />
+          <div class="row">
+            <a href="">Ver mas</a>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Records</h3>
+          <img src="./img/box2.jpg" alt="" width="200" height="200" />
+          <div class="row">
+            <a href="">Ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center" id="contact">
+        <div class="col-8">
+          <h3>Contact Us</h3>
+          <div class="row">
+            <form action="">
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input
+                    class="form-control"
+                    id="floatingname"
+                    placeholder="Nombre"
+                  />
+                  <label for="floatingname">Nombre</label>
                 </div>
-              </form>
-            </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea
+                    id="floatingtxt"
+                    class="form-control"
+                    placeholder="asc"
+                  ></textarea>
+                  <label for="floatingtxt">Mensaje</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
